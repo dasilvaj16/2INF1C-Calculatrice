@@ -43,7 +43,8 @@ namespace Calculatrice
                         isOpInCorrect = true;
                         break;
                     case "+":
-                        dblRep = 0;
+                        dblRep = Outils.Addition(dblVal1, dblVal2);
+                        Console.Write("La répose : " + dblRep.ToString());
                         break;
                     case "-":
                         dblRep = 0;
@@ -60,7 +61,6 @@ namespace Calculatrice
 
                 }
             }
-            Console.Write(dblVal1.ToString(), dblVal2.ToString());
 
             Console.ReadKey();
         }
